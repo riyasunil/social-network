@@ -8,7 +8,7 @@ function getFollowIdFromURL() {
 // Fetch the invitation details using the follow_id
 async function fetchInviteDetails(followId) {
     try {
-        const response = await fetch(`http://51.79.248.15:3000/api/invites/${followId}`);
+        const response = await fetch(`https://media.riamisu.site/api/invites/${followId}`);
         
         if (response.ok) {
             const data = await response.json();
@@ -41,7 +41,7 @@ async function acceptInvite(followId, inviterUsername) {
 
     try {
         // Send request to accept the invite and add the user to the following list
-        const response = await fetch(`http://51.79.248.15:3000/api/invites/follow/${followId}`, {
+        const response = await fetch(`https://media.riamisu.site/api/invites/follow/${followId}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

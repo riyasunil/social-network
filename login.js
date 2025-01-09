@@ -14,7 +14,7 @@ document.querySelector('.login-form').addEventListener('submit', async function(
 
     // Send the data to the backend (Node.js Express)
     try {
-        const response = await fetch('http://51.79.248.15:3000/login', {
+        const response = await fetch('https://media.riamisu.site/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

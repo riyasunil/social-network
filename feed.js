@@ -9,7 +9,7 @@ async function fetchFeedPosts() {
 
     try {
         // Fetch the feed posts from the backend
-        const response = await fetch('http://51.79.248.15:3000/api/feed', {
+        const response = await fetch('https://media.riamisu.site/api/feed', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

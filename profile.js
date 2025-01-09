@@ -15,7 +15,7 @@ async function fetchUserProfile() {
     console.log(username)
 
     // If no username is provided in the URL, we default to the logged-in user's profile
-    const profileUrl = username ? `http://51.79.248.15:3000/profile/${username}` : 'http://51.79.248.15:3000/profile';
+    const profileUrl = username ? `https://media.riamisu.site/profile/${username}` : 'https://media.riamisu.site/profile';
 
 
         const response = await fetch(profileUrl, {
@@ -65,7 +65,7 @@ async function generateInviteLink() {
 
     try {
         // Send request to generate invite link from the backend
-        const response = await fetch('http://51.79.248.15:3000/api/invites/generate', {
+        const response = await fetch('https://media.riamisu.site/api/invites/generate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

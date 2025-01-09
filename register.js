@@ -16,7 +16,7 @@ document.querySelector('.register-form').addEventListener('submit', async functi
     }
 
     try {
-        const response = await fetch('http://51.79.248.15:3000/register', {
+        const response = await fetch('https://media.riamisu.site/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
