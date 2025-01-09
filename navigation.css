@@ -1,0 +1,13 @@
+.nav-container{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.nav-placeholder{
+    border: 1px solid black;
+
+}

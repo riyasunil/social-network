@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-picture" id="profile-picture"></div>
+            <div class="profile-info">
+                <h1 class="username" id="username"></h1>
+                <p class="bio" id="bio"></p>
+                <button class="invite-btn">invite 2 ur profile</button>
+                <div id="invite-link-container" style="display: none;">
+                    <p>Your invite link:</p>
+                    <input type="text" id="invite-link" readonly>
+                    <button id="copy-btn">Copy Link</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="posts-grid" id="posts-grid">
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+    <div id="nav-placeholder"></div>
+    <script>
+        document.getElementById('nav-placeholder').innerHTML = `
+            <div class="nav-container">
+                <a href="/feed.html">home</a>
+                <a href="/profile.html">profile</a>
+                <a href="/logout">logout</a>
+            </div>
+        `;
+    </script>
+</body>
+</html>
